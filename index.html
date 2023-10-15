@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forums webApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css "/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+    
+        <img class="logo" src="https://logos-download.com/wp-content/uploads/2016/06/Reddit_logo_full_1.png" alt="logo">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search for Creators" />
+        </div>
+        <div class="create">
+            <button  class=" btn btn-primary" id="login"> Sign In</button> 
+            <div class="profile-photo">
+                <img src="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1" alt="Profile">
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------MAIN---------------->
+    <main>
+      <div class="container">
+          <!--------LEFT------------>
+          <div class="left">
+            <a  class="profile">
+               <div class="profile-photo">
+                 <img src="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1" alt="profile">
+               </div>
+               <div class="handle">
+                <h4>Hemant</h4>
+                <p class="text-muted">
+                  @HemantKr071
+                </p>
+               </div>
+            </a>
+            <!--------SIDEBAR----------->
+            <div class="sidebar">
+              <a class="menu-item active">
+                <span><i class="fa-solid fa-house"></i><h3>Home</h3></span>
+              </a>
+              <a class="menu-item">
+                <span><i class="fa-regular fa-compass"></i><h3>Explore</h3></span>
+              </a>
+
+              <a class="menu-item">
+                <span><i class="fa-regular fa-bell"><small class="notification-count">10+</small></i><h3>Notifications</h3></span>
+              </a>
+
+              <a class="menu-item">
+                <span><i class="fa-regular fa-envelope"><small class="notification-count">5</small></i><h3>Messages</h3></span>
+              </a>
+
+              <a class="menu-item">
+                <span><i class="fa-regular fa-bookmark"></i><h3>Bookmarks</h3></span>
+              </a>
+
+              <a class="menu-item">
+                <span><i class="fa-solid fa-chart-line"></i><h3>Analytics</h3></span>
+              </a>
+
+              <a class="menu-item">
+                <span><i class="fa-solid fa-palette"></i><h3>Theme</h3></span>
+              </a>
+
+              <a class="menu-item active">
+                <span><i class="fa-solid fa-gear"></i><h3>Settings</h3></span>
+              </a>
+               
+               </div>
+               <!--------END OF SIDEBAR----------->
+               <label for="create-post" class="btn btn-primary">Create Post</label>
+          </div>
+          <!--------MIDDLE----------->
+          <div class="middle">
+            <!--------STORIES----------->
+            <div class="stories">
+              
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1" alt="">
+                </div>
+                <p class="name">Your Story</p>
+              </div>
+
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="https://4.bp.blogspot.com/-7y6JZHHiINc/WlD0Kyz3rjI/AAAAAAAAlrs/Gd0-UDTo8e0Z3kji1fpq4krKT0mumJcNACLcBGAs/s1600/Virat-Kohli-Images-HD-3.jpg" alt="">
+                </div>
+                <p class="name">Virat Kohli</p>
+              </div>
+
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="https://images.alphacoders.com/112/thumb-1920-1129033.jpg" alt="">
+                </div>
+                <p class="name">Jeff Bezos</p>
+              </div>
+
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="https://th.bing.com/th/id/OIP.k5mBS4TCgV1jk-4IvWjySAHaFj?pid=ImgDet&rs=1" alt="">
+                </div>
+                <p class="name">Elon Musk</p>
+              </div>
+
+              <div class="story">
+                <div class="profile-photo">
+                  <img src="https://i.zoomtventertainment.com/story/shah_rukh_khan.jpg" alt="">
+                </div>
+                <p class="name">Shahrukh Khan</p>
+              </div>
+            </div>
+            <!--------END OF STORIES----------->
+            <form class="create-post">
+              <div class="profile-photo">
+                <img src="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1" alt="">
+              </div>
+              <input id="create-post" type="text" placeholder="What's on your mind,Hemant?">
+              <input type="submit" value="Post" class="btn btn-primary">
+            </form>
+
+             <!--------POSTS---------->
+             <div class="feeds">
+              <!--------FEED 1---------->
+              <div class="feed">
+                <div class="head">
+                  <div class="user">
+                    <div class="profile-photo">
+                      <img src="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1" alt="">
+                    </div>
+                    <div class="ingo">
+                      <h3>Hemant</h3>
+                      <small> India, 2 hours ago </small>
+                    </div>
+                    
+                  </div>
+                  <span class="edit">
+                    <button class="btn btn-primary">Join</button>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </span>
+                </div>
+               
+                <div class="photo">
+                  <div class="content">
+                    <p> KL Rahul's reaction after hitting the match winning six instead of a four.He missed the century by 3 runs</p>
+                  </div>
+                  <img src="https://i.redd.it/kl-rahuls-reaction-after-hitting-the-match-winning-six-v0-fknbbwocb0tb1.png?s=1a9f344710b80fc17de0435165f7ad746105c8fb" alt="">
+                </div>
+                <div class="action-button">
+                  <div class="interaction-button">
+                    
+                    <div class="upvote">
+                      <i class="fa-solid fa-up-long"></i>
+                      <h3>4.6K</h3>
+                      <i class="fa-solid fa-down-long"></i>
+                    </div>
+                    
+                    <div class="comment">
+                      <i class="fa-regular fa-message"></i>
+                      <h3>566</h3>
+                    </div>
+
+                    <div class="share">
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                      <h3>120</h3>
+                    </div>
+
+                  </div>
+                  
+                </div>
+
+              </div>
+             </div>
+
+             
+
+             <!--------FEED 2---------->
+             <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-photo">
+                    <img src="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1" alt="">
+                  </div>
+                  <div class="ingo">
+                    <h3></h3>
+                    <small> India, 6 hours ago </small>
+                  </div>
+                  
+                </div>
+                <span class="edit">
+                  <button class="btn btn-primary">Join</button>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+              </div>
+             
+              <div class="photo">
+                <div class="content">
+                  <p> What a Class !!!   Klassy Rahul (97*)</p>
+                </div>
+                <video controls  src="postvideo.mp4" alt="">
+              </div>
+              <div class="action-button">
+                <div class="interaction-button">
+                  
+                  <div class="upvote">
+                    <i class="fa-solid fa-up-long"></i>
+                    <h3>4.6K</h3>
+                    <i class="fa-solid fa-down-long"></i>
+                  </div>
+                  
+                  <div class="comment">
+                     <i class="fa-regular fa-message"></i>
+                    
+                     <h3>566</h3>
+                  </div>
+                
+
+                  <div class="share">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <h3>120</h3>
+                  </div>
+
+                </div>
+                
+              </div>
+
+            </div>
+           </div>
+
+            
+
+
+
+            
+          </div>
+          <!--------RIGHT----------->
+          <div id="comment-container" class="right">
+            <div class="head1"><h1>POST A COMMENT</h1></div>
+            <div><span id="comment">0 Comments</span></div>
+            <div class="text"><p>We are happy to hear from you</p></div>
+            <div class="comments"></div>
+            <div class="commentbox">
+              <img src="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1" alt="">
+              <div class="content1">
+                <h2>Comment as:</h2>
+                <input type="text" value="Anonymous" class="user">
+
+                <div class="commentinput">
+                  <input type="text" placeholder="Enter comment" class="usercomment">
+                  <div class="buttons">
+                    <button class="btn btn-primary" type="submit" disabled id="publish">Publish</button>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+         
+            
+        </div>
+      
+      </div>
+    </main>
+    
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+  import {  getAuth,GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyArjwDVD7Os4-gY1Tzfr65TO7WJRM5c198",
+    authDomain: "auth-a610d.firebaseapp.com",
+    projectId: "auth-a610d",
+    storageBucket: "auth-a610d.appspot.com",
+    messagingSenderId: "43527822128",
+    appId: "1:43527822128:web:fa70bd6d13b8e3984dc6f5"
+  };
+  
+
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider(app);
+
+  login.addEventListener('click', (e) => {
+    signInWithRedirect(auth, provider);
+
+    getRedirectResult(auth)
+      .then((result) => {
+    // This gives you a Google Access Token. You can use it to access Google APIs.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+
+    // The signed-in user info.
+        const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+        }).catch((error) => {
+    // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+    // The email of the user's account used.
+        const email = error.customData.email;
+    // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+       
+  });
+  });
+
+
+     
+    const divContainer = document.getElementById("comment-container");
+    
+     function showOrHide(){
+      document.getElementById("comment-container").style.display = "block";
+    }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      const userId={
+        name: null,
+        identity: null,
+        image: null,
+        message: null,
+        date: null
+      }
+
+      const userComment= document.querySelector(".usercomment");
+      const publishBtn= document.querySelector("#publish");
+      const comments= document.querySelector(".comments");
+      const userName= document.querySelector(".user");
+
+      userComment.addEventListener("input", e => {
+        if(!userComment.value){
+          publishBtn.setAttribute("disabled","disabled");
+          publishBtn.classList.remove("abled");
+        }
+        else{
+          publishBtn.removeAttribute("disabled");
+          publishBtn.classList.add("abled");
+        }
+      })
+
+      function addPost(){
+        console.log("Button Working")
+        if(userComment.value) return;
+        userId.name =userName.value;
+        if(userId.name === "Anonymous"){
+          userId.identity = false;
+          userId.image = "https://th.bing.com/th/id/R.7ea4af7d8401d2b43ee841bfa2abe89d?rik=xidyUKdveUKULQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-download-icons-logos-emojis-users-2240.png&ehk=2%2bOqgdMZqFkKaBclc%2fPL9B86vLju3iBGiFmH64kXaTM%3d&risl=&pid=ImgRaw&r=0";
+        }
+        else{
+          userId.identity = true;
+          userId.image = "https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1";
+        }
+
+        userId.message= userComment.value;
+        userId.date = new Date().toLocaleString();
+        let published = 
+          `<div class="parents">
+          <img src ="${userId.image}">
+          <div>
+            <h1>${userId.name}</h1>
+            <p>${userId.message}</p>
+            <div class="engagements"><img src ="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1"><img src ="https://th.bing.com/th/id/OIP.ebp0YpBgDQotKZDbrLusPAHaHa?pid=ImgDet&rs=1"></div>
+            <span class="date">${userId.date}</span>
+
+            
+          </div>`;
+         
+          comments.innerHTML += published;
+          userComment.value = "";
+      }
+
+      publishBtn.addEventListener("click",addPost);
+    </script>
+  </body>
+</html>
